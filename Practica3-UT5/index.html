@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Pokemon</title>
+    <link href="/images/pokeball-favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    <!--<img src="pokedeximg.png" alt="" id="pokedex">-->
+    <main class="flex">
+            <article class="card">
+                <img src="pokemonwallpaper.jpg" alt="image header card" class="card-header">
+                <div class="card-body">
+                    <img src="pokemonwallp2.png" alt="pokemon's" class="card-body-img">
+                    <h1 class="card-body-title">
+                        pokemon
+                        <span>26</span>
+                    </h1>
+                    <p class="card-body-text">pokemon</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-footer-buttons">
+                        <button id="ant">Anterior</button>
+                        <button id="sig">siguiente</button>
+                    </div>
+                    <div class="card-footer-boxstats">
+                        <div class="card-footer-boxstats-stats">
+                            <h3>80K</h3>
+                            <p>Ataque</p>
+                        </div>
+                        <div class="card-footer-boxstats-stats">
+                            <h3>803K</h3>
+                            <p>Especial</p>
+                        </div>
+                        <div class="card-footer-boxstats-stats">
+                            <h3>1.4K</h3>
+                            <p>Defensa</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+    </main>
+    <footer>
+        <div class="buscaId">
+                <input type="search" name="busquedaPokemon"  id="buscador" placeholder="Introduce un ID...">
+                <input type="submit" value="Buscar" id="buscar">
+        </div>  
+    </footer>
+    <script src="http.class.js"></script>
+    <script src="pokemon.class.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js'></script>
+    <script src="index.js"></script>
+</body>
+</html>
